@@ -1,0 +1,9 @@
+name: Magic8Ball
+version: 0.02
+description: The plugin for all your doubts
+main: me.kyllian.magic8ball.Magic8BallPlugin
+
+commands:
+  magic8ball:
+    usage: /<command>
+    aliases: [m8b]

@@ -1,0 +1,35 @@
+# Magic 8 Ball plugin by Kyllian
+
+Answers:
+  - 'It is certain'
+  - 'It is decidedly so'
+  - 'Without a doubt'
+  - 'Yes - definitely'
+  - 'As i see it, yes'
+  - 'Most likely'
+  - 'Outlook good'
+  - 'Yes'
+  - 'Signs point to yes'
+  - 'Reply hazy, try again'
+  - 'Ask again later'
+  - 'Better tell you not now'
+  - 'Cannot predict now'
+  - 'Concentrate and ask again'
+  - 'Don''t count on it'
+  - 'My reply is no'
+  - 'My sources say no'
+  - 'Outlook not so good'
+  - 'Very doubtful'
+
+Messages:
+  Cooldown: '&c&lError&7: You are in a cooldown for %d seconds'
+  NoPermissions: '&c&lError&7: You don''t have permissions to do this'
+  UnknownArgument: '&c&lError&7: Argument unknown'
+  ReloadMessage: '&c&lMagic 8 Ball&7: Config reloaded'
+  Answer: '&c&lMagic 8 Ball&7: %s'
+
+Settings:
+  Delay:
+    Enabled: true
+    Delay: 5000
+  MessagePrefix: '!'
