@@ -21,6 +21,7 @@ public class Magic8BallPlugin extends JavaPlugin {
     private MessagesManager messageUtils;
     private ConfigManager configManager;
 
+    @Override
     public void onEnable() {
         getConfig().options().copyDefaults(true);
         saveDefaultConfig();

@@ -13,6 +13,7 @@ public class Magic8BallCommand implements CommandExecutor {
         this.plugin = plugin;
     }
 
+    @Override
     public boolean onCommand(CommandSender sender, Command command, String commandLabel, String[] args) {
         if (args.length == 1) {
             if (args[0].equalsIgnoreCase("reload")) {

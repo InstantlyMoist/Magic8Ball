@@ -23,11 +23,11 @@ public class AsyncPlayerChatListener implements Listener {
         if (!event.getMessage().startsWith(plugin.getConfigManager().getPrefix())) return;
         if (!player.hasPermission("magic8ball.use")) return;
         PlayerData playerData = plugin.getPlayerData(player);
-        if (playerData.getDelayedTimestamp() > System.currentTimeMillis() && plugin.getConfigManager().getDelayEnabled()) {
+        if (playerData.getDelayedTimestamp() > System.currentTimeMillis() && plugin.getConfigManager().isDelayEnabled()) {
             player.sendMessage(plugin.getMessageUtils().getCooldownMessage(player));
             return;
         }
-        if (plugin.getConfigManager().getDelayEnabled()) playerData.setDelayedTimestamp(System.currentTimeMillis() + plugin.getConfigManager().getDelay());
+        if (plugin.getConfigManager().isDelayEnabled()) playerData.setDelayedTimestamp(System.currentTimeMillis() + plugin.getConfigManager().getDelay());
         Bukkit.broadcastMessage(plugin.getMessageUtils().getAnswerMessage());
     }
 }

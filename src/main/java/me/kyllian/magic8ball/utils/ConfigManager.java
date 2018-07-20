@@ -14,7 +14,7 @@ public class ConfigManager {
         return plugin.getConfig().getString("Settings.MessagePrefix");
     }
 
-    public boolean getDelayEnabled() {
+    public boolean isDelayEnabled() {
         return plugin.getConfig().getBoolean("Settings.Delay.Enabled");
     }
 

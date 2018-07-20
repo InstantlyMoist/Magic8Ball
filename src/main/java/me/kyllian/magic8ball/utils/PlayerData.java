@@ -4,12 +4,12 @@ import java.util.UUID;
 
 public class PlayerData {
 
+    private UUID uuid;
+    private long delayedTimestamp;
+
     public PlayerData (UUID uuid) {
         this.uuid = uuid;
     }
-
-    protected UUID uuid;
-    protected long delayedTimestamp;
 
     public long getDelayedTimestamp() {
         return delayedTimestamp;
